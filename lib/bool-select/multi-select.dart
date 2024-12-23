@@ -10,6 +10,26 @@ class MultiSelect extends StatefulWidget {
 class _MultiSelectState extends State<MultiSelect> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+      body: Center(child: Row(
+        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+        children: [
+          InkWell(
+            child: Container(
+              height: 100,
+              width: 100,
+              color: Colors.black26 ,
+            ),
+          ),
+          InkWell(
+            child: Container(
+              height: 100,
+              width: 100,
+              color: Colors.black26 ,
+            ),
+          )
+        ],
+      ),),
+    );
   }
 }
