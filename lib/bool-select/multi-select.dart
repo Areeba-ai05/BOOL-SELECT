@@ -44,6 +44,36 @@ class _MultiSelectState extends State<MultiSelect> {
               Colors.black26 ,
             ),
           ),
+          InkWell(
+            onTap: (){
+              select=3;
+              print('-------------------2');
+              setState(() {
+
+              });
+            },
+            child: Container(
+              height: 100,
+              width: 100,
+              color:select==3?Colors.red:
+              Colors.black26 ,
+            ),
+          ),
+          InkWell(
+            onTap: (){
+              select=4;
+              print('-------------------2');
+              setState(() {
+
+              });
+            },
+            child: Container(
+              height: 100,
+              width: 100,
+              color:select==4?Colors.pink :
+              Colors.black26 ,
+            ),
+          ),
         ],
       ),),
     );
