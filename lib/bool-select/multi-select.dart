@@ -6,8 +6,9 @@ class MultiSelect extends StatefulWidget {
   @override
   State<MultiSelect> createState() => _MultiSelectState();
 }
-int select=0;
+
 class _MultiSelectState extends State<MultiSelect> {
+  int select=0;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -30,7 +31,8 @@ class _MultiSelectState extends State<MultiSelect> {
           ),
           InkWell(
             onTap: (){
-              select==2;
+              select=2;
+              print('-------------------2');
               setState(() {
 
               });
